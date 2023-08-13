@@ -34,6 +34,7 @@ const handleLearnMore = (actrName, episodes, charName, titleType)=>{
   setTitType(titleType);
 }
 async function fetchData(){
+  // console.log(options)
   
   try {
     const response = await axios.request(options);
@@ -59,9 +60,9 @@ return (
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <form className="form-inline my-2 my-lg-0" onSubmit={(e)=>{
-                        // e.preventDefault();
+                        e.preventDefault();
                         setSrchMovie(movie);
-                        console.log(srchMovie);
+                        fetchData();
                     }}>
                     <input className="form-control mr-sm-2" type="search" placeholder="Search Movie" aria-label="Search" value={movie} onChange={(e)=>{
                         setMovie(e.target.value);
