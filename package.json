@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "homepage": "https://aksharma-1.github.io/Movies",
+  "homepage": "https://aksharma-1.github.io/Movie-search-engine",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
